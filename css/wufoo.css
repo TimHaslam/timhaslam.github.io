@@ -1,0 +1,40 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Shiver Hamilton
+ URL : https://dev2.codegreene.com/shiver/
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+form.wufoo {padding:0 20px;box-sizing:border-box;background:#f8f6f6;}
+
+.wufoo .focused{background:#FFF7C0}
+.wufoo .instruct{background-color:#F5F5F5}
+
+/* Borders */
+.wufoo .info{border-bottom:1px dotted #CCCCCC}
+.wufoo .instruct{border:1px solid #e6e6e6}
+
+/* Typography */
+.wufoo .info h2{display:none;}
+.wufoo .info div{font-size:95%;font-family:inherit;color:#444444}
+.wufoo .section h3{font-size:110%;font-family:inherit;background:#FFFFFF;color:#000000}
+.wufoo .section div{font-size:85%;font-family:inherit;color:#444444}
+.wufoo label.desc, .wufoo legend.desc{font-size:95%;font-family:inherit;color:#444444}
+.wufoo li div, .wufoo li div label, .wufoo li span label{font-family:inherit;color:#444444}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;width:100%;box-sizing:border-box;font-family:inherit;color:#333333;border:1px solid #e2e2e2;border-radius:2px;}
+.wufoo label.choice{color:#444444}
+.wufoo .instruct{font-size:80%;font-family:inherit;color:#444444}
+.wufoo .input:focus {border:1px solid #5076a2;}
+.wufoo input[type="submit"] {display: inline-block; vertical-align: middle; -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 40px;text-transform: uppercase; font-size:12px; padding:10px 24px; text-decoration: none; border:0; border:2px solid transparent; transition: all .3s;background:#00aeef; color: #fff; }
+.wufoo input[type="submit"]:hover { background: #fff; color: #00aeef; border-color:#00aeef; }
+.input.text, input.search, textarea.textarea {background:none;}
+
+
+.confirm .wufoo {text-align: left;font-family: 'Roboto', sans-serif;}
+.embed .confirm h2.paidHeading {font-size: 16px;line-height: 22px;margin: 0; padding: 0;color: #5f5f5f;}
+.confirm form ul {color: #5f5f5f;list-style-type: initial;padding-left: 30px;}
+.confirm form p a,
+.confirm form ul li a {color:#00aeef;}
+
+.confirm form p a:hover,
+.confirm form ul li a:hover {color:#5f5f5f;}
