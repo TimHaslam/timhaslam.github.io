@@ -179,7 +179,7 @@ header {
     text-align: center;
     color: #fff;
     background-image: url(../img/header-faded.jpg);
-    background-position: center;
+    background-position: top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -198,7 +198,11 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
-	color:#000;
+	color:#fff;
+	background:rgba(0,0,0,0.6);
+	display:inline-block;
+	padding:10px;
+	box-sizing:border-box;
 }
 
 header .header-content .header-content-inner hr {
@@ -209,7 +213,10 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: #000;
+    color: #fff;
+	background:rgba(0,0,0,0.6);
+	padding:10px;
+	box-sizing:border-box;
 }
 
 @media(min-width:768px) {
