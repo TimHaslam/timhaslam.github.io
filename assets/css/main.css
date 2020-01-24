@@ -1345,19 +1345,19 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.poptrox-popup:before {
+			/*.poptrox-popup:before {
 				display: none;
-			}
+			}*/
 
-			.poptrox-popup .caption {
+			/*.poptrox-popup .caption {
 				display: none !important;
-			}
+			}*/
 
-			.poptrox-popup .closer,
+			/*.poptrox-popup .closer,
 			.poptrox-popup .nav-previous,
 			.poptrox-popup .nav-next {
 				display: none !important;
-			}
+			}*/
 
 		}
 
@@ -2035,6 +2035,8 @@ input, select, textarea {
 					-ms-transition-delay: 0.95s;
 					transition-delay: 0.95s;
 				}
+				
+				#header span {display:none;}
 
 		}
 
