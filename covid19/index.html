@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tim Haslam - COVID-19</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../bootstrap/font-awesome/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12"><h2>COVID-19 - Utah Cases</h2><hr></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<div style="width:100%">
+					<canvas id="canvas"></canvas>
+				</div>
+			
+							<script>
+									window.onload = function() {
+										var ctx = document.getElementById('canvas').getContext('2d');
+										window.myBar = new Chart(ctx, {
+											type: 'bar',
+											data: {
+												labels: ['3/5', '3/6', '3/7', '3/8', '3/9', '3/10', '3/11', '3/12', '3/13', '3/14', '3/15', '3/16', '3/17', '3/18', '3/19', '3/20'],
+												datasets: [{
+													label: 'Deaths',
+													backgroundColor: 'rgba(192,0,14,1)',
+													data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+													order:1
+												},{
+													label: 'Recovered',
+													backgroundColor:'rgba(12,192,0,1)',
+													data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+													order:1
+												},{
+													label: 'Cases',
+													backgroundColor: 'rgba(233,188,69,1)',
+													data: [0,1,1,1,1,2,3,5,9,10,28,39,51,51,80,112],
+													order:1
+												},{
+													label: 'Cases - Line',
+													backgroundColor: 'rgba(0,0,0,0.1)',
+													data: [0,1,1,1,1,2,3,5,9,10,28,39,51,51,80,112],
+													type:'line',
+													order:2
+												}]
+
+											},
+											options: {
+												title: {
+													display: false,
+													text: 'Chart.js Bar Chart - Stacked'
+												},
+												tooltips: {
+													mode: 'index',
+													intersect: false
+												},
+												responsive: true,
+												scales: {
+													xAxes:[{
+														stacked: true,
+													}],
+													yAxes:[{
+														stacked: true
+													}]
+												}
+											}
+										});
+									};
+
+									</script>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<p>Data via <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE GitHub</a></p>
+			</div>
+		</div>
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM=" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="../bootstrap/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bootstrap/bootstrap.min.js"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-4614069-6', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</body>
+
+</html>
