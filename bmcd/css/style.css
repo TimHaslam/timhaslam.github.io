@@ -106,6 +106,7 @@ header {width:100%;float:left;border-bottom:10px solid #000;padding:100px 0 45px
 .nav li {color:#847e76;float:left;margin-left:10px;}
 .nav li a {color:#847e76}
 .nav li.active a {font-weight:bold;color:#fe5b31;}
+header.sticky {background:#000;position:fixed;top:0;z-index:100;left:0;width:100%;6	yuj}
 
 .page-cap {float:left;width:100%;}
 .page-cap h2 {color:#fff;font-weight:bold;font-size:40px;float:left;margin-bottom:48px;}
