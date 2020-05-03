@@ -170,7 +170,6 @@ header.sticky .container {border:0;padding:0;}
 @media screen and (max-width:600px) {
 	.page-work-grid .work-card {width:100%;}
 	.page-project .row {margin-bottom:0px;}
-	.page-project .row img {margin-bottom:20px;}
 	.page-project .row.two-img img,
 	.page-project .row.three-img img {width:100%;}
 	.accordion-panel {width:auto;}
