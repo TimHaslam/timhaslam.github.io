@@ -181,6 +181,6 @@ header.sticky .container {border:0;padding:0;}
 	section.content {margin-top:193px;}
 	.download {display:flex;flex-wrap:wrap;padding:43px 0 27px 20px;}
 	.accordion {width:100%;}
-	.accordion-bar {padding:16px 0 16px 20px}
+	.accordion-bar {padding:16px 0 16px 20px;background-position:right 16px;}
 	.accordion-panel {width:100%;}
 }
