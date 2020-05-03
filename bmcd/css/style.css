@@ -137,10 +137,34 @@ header.sticky .container {border:0;padding:0;}
 .page-project .row.two-img img {float:left;width:50%;height:auto;}
 .page-project .row.three-img img {float:left;width:33.33%;height:auto;}
 
+.download {display:flex;flex-wrap:wrap;padding:63px 0 47px 40px;justify-content:space-between;align-items:center;color:#fe5b31;font-size:17px;font-weight:bold;}
+.download a {color:#fe5b31;}
+.download a:hover {opacity:0.7}
+.accordion {float:right;width:calc(100% - 100px);border-top:1px solid #686058;}
+.accordion-bar {overflow:hidden;padding:24px 0 24px 40px;border-bottom:1px solid #686058;background-image:url('../img/icon-up.svg');background-repeat:no-repeat;background-position:right 24px;background-size:20px;}
+.accordion-bar:hover {cursor:pointer;}
+.accordion-bar.open {background-image:url('../img/icon-down.svg')}
+.accordion-bar h3 {font-size:17px;color:#a19c97;font-weight:bold;}
+.accordion-panel {display:none;width:772px;float:right;font-size:15px;font-weight:bold;color:#a19c97;padding:0 20px 26px 0;box-sizing:border-box;}
+.accordion-panel span {font-size:11px;font-weight:normal;color:#fe5b31;display:block;margin-top:5px;}
+.accordion-panel p {font-size:11px;font-width:normal;color:#686058;line-height:13px;margin:5px 0 10px;}
+.accordion-panel p:last-of-type {margin:5px 0 0;}
+.copyright {font-size:8px;font-weight:bold;color:#686058;margin:10px 0 50px;}
+.copyright span {font-weight:normal;}
+
 @media screen and (max-width:1210px) {
 	.container {width:100%;}
 	header .container {margin:0 20px;width:calc(100% - 40px)}
 	.page-work-grid .work-card {width:calc(33.33% - 10px);}
+}
+
+@media screen and (max-width:1120px) {
+	.page-cap h2 {margin-bottom:20px;}
+	.page-cap .help-text {width:100%;float:left;padding-top:0px;padding-bottom:20px;}
+}
+
+@media screen and (max-width:1100px) {
+	.accordion-panel {width:70vw;margin:20px 0 0;}
 }
 
 @media screen and (max-width:600px) {
@@ -149,4 +173,14 @@ header.sticky .container {border:0;padding:0;}
 	.page-project .row img {margin-bottom:20px;}
 	.page-project .row.two-img img,
 	.page-project .row.three-img img {width:100%;}
+	.accordion-panel {width:auto;}
+}
+
+@media screen and (max-width:500px) {
+	header {padding:50px 0 45px;}
+	section.content {margin-top:193px;}
+	.download {display:flex;flex-wrap:wrap;padding:43px 0 27px 20px;}
+	.accordion {width:100%;}
+	.accordion-bar {padding:16px 0 16px 20px}
+	.accordion-panel {width:100%;}
 }
