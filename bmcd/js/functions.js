@@ -23,10 +23,11 @@ $( document ).ready(function() {
 		$(this).toggleClass("open");
 	});
 	
-	$('.nav').slicknav({
-		prependTo: 'header .container',
-		label: ''
-	});
+	var $hamburger = $(".hamburger");
+	  $hamburger.on("click", function(e) {
+	    $hamburger.toggleClass("is-active");
+	    // Do something else, like open/close menu
+	  });
 });
 
 
