@@ -58,6 +58,15 @@ a[href^=tel] {
    color: inherit;
 }
 
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
@@ -151,7 +160,6 @@ header.sticky .container {border:0;padding:0;}
 .page-project .row.three-img img {float:left;width:33.33%;height:auto;}
 .page-project + .copyright {border:0;}
 
-.resume-template .container {padding:0 40px;}
 .download {width:calc(100% - 140px);float:right;display:flex;flex-wrap:wrap;padding:63px 0 47px 40px;justify-content:space-between;align-items:center;color:#95713a;font-size:30px;font-weight:bold;}
 .download a {color:#95713a;}
 .download a:hover {opacity:0.7}
@@ -178,6 +186,14 @@ header.sticky .container {border:0;padding:0;}
 .hamburger {outline:0;display:none;}
 .hamburger--collapse .hamburger-inner:after {top:-16px}
 .hamburger-box {width:30px;}
+
+@media screen and (orientation:landscape) {
+	.hamburger {position:relative;display:block;float:right;padding:0;z-index:2;}
+	.nav {width:100%;float:left;transform:translateY(-400%);top:0;left:0;position:absolute;transition:all 500ms;background:#0e0e0d;z-index:0;}
+	.hamburger.is-active + .nav {transform:translateY(0);top:30px;transition:all 500ms;}
+	.nav li {width:calc(100% - 40px);padding:24px 0;border-bottom:1px solid #4f4f4e;margin-left:20px;}
+	.nav li:last-of-type {border-bottom:none;}
+}
 
 @media screen and (max-width:1210px) {
 	.container {width:100%;}
