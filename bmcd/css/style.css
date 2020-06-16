@@ -237,7 +237,7 @@ header.sticky .container {border:0;padding:0;}
 	.page-cap h2 {font-size:25px;}
 	.page-cap-project h2 {font-size:17px;max-width:90%;}
 	.page-cap-project .help-text {font-size:14px;line-height:18px;}
-	.work-card .card-text, .work-card .card-text:hover {display:none;}
+	.work-card .card-text, .work-card .card-text:hover, .work-card .card-text:active {display:none;}
 	.page-project {margin-top:7px;}
 	.toggle-text {margin-top:0px;width:22px;height:22px;}
 	.help-text {font-size:20px;line-height:24px;}
