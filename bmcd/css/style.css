@@ -188,6 +188,9 @@ header.sticky .container {border:0;padding:0;}
 .hamburger-box {width:30px;}
 
 @media screen and (orientation:landscape) {
+	header {padding:15px 0;margin-bottom:20px;}
+	header .container {padding:0 20px;box-sizing:border-box;width:100%;}
+	header + section {padding-top:110px;}
 	.hamburger {position:relative;display:block;float:right;padding:0;z-index:2;}
 	.nav {width:100%;float:left;transform:translateY(-400%);top:0;left:0;position:absolute;transition:all 500ms;background:#0e0e0d;z-index:0;}
 	.hamburger.is-active + .nav {transform:translateY(0);top:30px;transition:all 500ms;}
@@ -234,6 +237,7 @@ header.sticky .container {border:0;padding:0;}
 	.page-cap h2 {font-size:25px;}
 	.page-cap-project h2 {font-size:17px;max-width:90%;}
 	.page-cap-project .help-text {font-size:14px;line-height:18px;}
+	.page-project {margin-top:7px;}
 	.toggle-text {margin-top:0px;width:22px;height:22px;}
 	.help-text {font-size:20px;line-height:24px;}
 	.accordion {width:100%;}
