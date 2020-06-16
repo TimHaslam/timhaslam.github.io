@@ -53,6 +53,11 @@ a {
 text-decoration:none;
 }
 
+a[href^=tel] {
+   text-decoration:inherit;
+   color: inherit;
+}
+
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
@@ -140,10 +145,11 @@ header.sticky .container {border:0;padding:0;}
 .page-cap-project .help-text span {color:#95713a;}
 
 .page-project {float:left;width:100%;}
-.page-project .row {float:left;width:100%;margin-bottom:20px;}
+.page-project .row {float:left;width:100%;}
 .page-project .row.one-img img {float:left;width:100%;height:auto;}
 .page-project .row.two-img img {float:left;width:50%;height:auto;}
 .page-project .row.three-img img {float:left;width:33.33%;height:auto;}
+.page-project + .copyright {border:0;}
 
 .resume-template .container {padding:0 40px;}
 .download {width:calc(100% - 140px);float:right;display:flex;flex-wrap:wrap;padding:63px 0 47px 40px;justify-content:space-between;align-items:center;color:#95713a;font-size:30px;font-weight:bold;}
