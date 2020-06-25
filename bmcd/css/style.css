@@ -230,6 +230,8 @@ header.sticky .container {border:0;padding:0;}
 	.page-project .row.three-img img {width:100%;}
 	.accordion-panel {width:auto;}
 	header {margin-bottom:20px;}
+	.page-cap-project .help-text {font-size:14px;line-height:18px;}
+	.page-cap-project .help-text span {font-size:14px;line-height:18px;}
 }
 
 
@@ -239,8 +241,6 @@ header.sticky .container {border:0;padding:0;}
 	.download {display:flex;flex-wrap:wrap;padding:45px 0 27px 20px;width:100%;float:left;box-sizing:border-box;font-size:24px;}
 	.page-cap h2 {font-size:25px;}
 	.page-cap-project h2 {font-size:17px;max-width:90%;}
-	.page-cap-project .help-text {font-size:14px;line-height:18px;}
-	.page-cap-project .help-text span {font-size:14px;line-height:18px;}
 	.work-card .card-text, .work-card .card-text:hover, .work-card .card-text:active {display:none;}
 	.page-project {margin-top:7px;}
 	.toggle-text {margin-top:0px;width:22px;height:22px;}
