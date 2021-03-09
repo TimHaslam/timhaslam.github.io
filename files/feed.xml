@@ -5,22 +5,20 @@
 		<description>UHSAA Lacrosse Scores</description>
 		<language>en-us</language>
 		<item>
-		   <title>Boys: Woods Cross 10 beats Bountiful 3</title>
+		   <Title>UHSAA Boys Lacrosse</Title>
+		   <School1Name>Juan Diego Catholic</School1Name>
+		   <School1Score>3</School1Score>
+		   <School2Name>Farmington</School2Name>
+		   <School2Score>11</School2Score>
 		   <link>https://www.timhaslam.com/gamelink-uniqueurl</link>
 		   <description>Description</description>
 		</item>
 		<item>
-		   <title>Boys: Farmington 10 beats Syracuse 3</title>
-		   <link>https://www.timhaslam.com/gamelink-uniqueurl</link>
-		   <description>Description</description>
-		</item>
-		<item>
-		   <title>Boys: Highland 10 beats East 3</title>
-		   <link>https://www.timhaslam.com/gamelink-uniqueurl</link>
-		   <description>Description</description>
-		</item>
-		<item>
-		   <title>Boys: Brighton 10 beats Corner Canyon 3</title>
+		   <Title>UHSAA Girls Lacrosse</Title>
+		   <School1Name>Skyridge</School1Name>
+		   <School1Score>17</School1Score>
+		   <School2Name>Copper Hills</School2Name>
+		   <School2Score>2</School2Score>
 		   <link>https://www.timhaslam.com/gamelink-uniqueurl</link>
 		   <description>Description</description>
 		</item>
