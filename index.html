@@ -39,6 +39,7 @@
   --white: #FFFFFF;
   --off: #F6F5F2;
   --green: #56BD8E;
+  --green-text: #166534;
   --green-light: #e8f8f1;
   --amber: #F59E0B;
   --muted: #6B7280;
@@ -71,9 +72,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--green);
-}
-.top-links {
+  color: var(--green-text);
   display: flex;
   gap: 1.35rem;
   align-items: center;
@@ -249,7 +248,7 @@ body {
 .reputation {
   margin-top: 1.2rem;
   font-size: 0.84rem;
-  color: var(--muted);
+  color: #4B5563;
   border-left: 2px solid var(--border);
   padding-left: 0.9rem;
   font-style: italic;
@@ -263,7 +262,7 @@ body {
   font-size: 0.72rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #9CA3AF;
+  color: #4B5563;
 }
 
 /* CTA */
@@ -306,13 +305,13 @@ body {
 .cta-linkedin {
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--green);
+  color: var(--green-text);
   text-decoration: none;
   border-bottom: 1px solid var(--border);
   padding-bottom: 1px;
   transition: border-color 0.15s;
 }
-.cta-linkedin:hover { border-color: var(--green); }
+.cta-linkedin:hover { border-color: var(--green-text); }
 
 @media (max-width: 680px) {
   body { padding: 1.75rem 1.35rem 2.5rem; }
@@ -341,6 +340,7 @@ body {
 </head>
 <body>
 
+<header>
 <!-- TOP BAR -->
 <div class="top-bar">
   <span class="top-label">timhaslam.com</span>
@@ -352,7 +352,9 @@ body {
     <span class="loc" style="font-size:0.76rem; color:var(--muted);">Salt Lake City, UT</span>
   </div>
 </div>
+</header>
 
+<main>
 <!-- HERO -->
 <div class="hero">
   <div class="hero-content">
@@ -450,6 +452,9 @@ body {
   </div>
 </div>
 
+</main>
+
+<footer>
 <!-- CTA -->
 <div class="cta">
   <p class="cta-headline">I'm someone teams rely on when something is unclear, stuck, or starting to break. If that's what you're looking for — let's talk.</p>
@@ -458,6 +463,8 @@ body {
     <a class="cta-linkedin" href="https://www.linkedin.com/in/timhaslam23/" target="_blank" rel="noopener">Connect on LinkedIn</a>
   </div>
 </div>
+
+</footer>
 
 </body>
 </html>
