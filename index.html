@@ -1,66 +1,448 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Tim Haslam</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/9160f635df.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-        <div class="webdev-bg"></div>
-        <div class="lacrosse-bg"></div>
-        <div class="flex-container">
-            <div class="main-title">
-                <h1>Tim Haslam</h1>
-                <h2>Husband, Father, Web Developer, Lacrosse Fanatic</h2>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/timhaslam23/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;
-                    <a href="https://www.x.com/TimHaslam" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                </div>
-            </div>
-		    <div class="webdev">
-                <div class="ex-box">
-                    <div class="experience">
-                        <div class="company">ThomasARTS / Integrity</div>
-                        <div class="role">Director of Web Development <span>(2021 - Present)</span></div>
-                        <div class="links"><a href="https://integrity.com" target="_blank">integrity.com</a></div>
-                    </div>
-                    <div class="experience">
-                        <div class="company">Governor's Office of Economic Development</div>
-                        <div class="role">Digital Media Specialist (2020 - 2021)</div>
-                        <div class="links"><a href="https://business.utah.gov" target="_blank">business.utah.gov</a></div>
-                    </div>
-                    <div class="experience">
-                        <div class="company">Code Greene</div>
-                        <div class="role">Web Developer (2008 - 2020)</div>
-                        <div class="links"><a href="https://codegreene.com" target="_blank">codegreene.com</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="lacrosse">
-                <div class="ex-box">
-                    <div class="experience">
-                        <div class="company">University of Utah Men's Lacrosse</div>
-                        <div class="role">Director of Operations <span>(2022 - Present)</span></div>
-                        <div class="role second">Founders Club Admin (2016 - 2022)</div>
-                        <div class="role third">Sports Information Director (2016 - 2018)</div>
-                        <div class="links"><a href="https://utahutes.com/sports/mens-lacrosse" target="_blank">utahutes.com</a></div>
-                    </div>
-                    <div class="experience">
-                        <div class="company">Utah Lax Report</div>
-                        <div class="role">Founder & Editor In Chief (2019 - 2022)</div>
-                        <div class="links"><a href="https://utahlaxreport.com" target="_blank">utahlaxreport.com</a></div>
-                    </div>
-                    <div class="experience">
-                        <div class="company">Utah Lacrosse News</div>
-                        <div class="role">Founder & Editor In Chief (2010 - 2017)</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tim Haslam — Builder. Operator. Media Founder.</title>
+
+<!-- SEO -->
+<meta name="description" content="I've spent most of my career solving problems that don't fit neatly into a job title. Director of Web Development at Integrity. Media founder. Builder. Salt Lake City, UT.">
+<meta name="author" content="Tim Haslam">
+<link rel="canonical" href="https://timhaslam.com">
+
+<!-- Open Graph — controls previews in Teams, Slack, iMessage, most messaging apps -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://timhaslam.com">
+<meta property="og:title" content="Tim Haslam — More than the résumé says">
+<meta property="og:description" content="I've spent most of my career solving problems that don't fit neatly into a job title. Director of Web Development at Integrity. Media founder. Builder.">
+<meta property="og:image" content="https://timhaslam.com/og-image.jpg">
+<meta property="og:image:alt" content="Tim Haslam on the lacrosse sideline">
+<meta property="og:site_name" content="Tim Haslam">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tim Haslam — More than the résumé says">
+<meta name="twitter:description" content="I've spent most of my career solving problems that don't fit neatly into a job title. Director of Web Development at Integrity. Media founder. Builder.">
+<meta name="twitter:image" content="https://timhaslam.com/og-image.jpg">
+<meta name="twitter:image:alt" content="Tim Haslam on the lacrosse sideline">
+
+<!-- Browser / mobile chrome -->
+<meta name="theme-color" content="#56BD8E">
+<meta name="color-scheme" content="light">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700;1,9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #111111;
+  --white: #FFFFFF;
+  --off: #F6F5F2;
+  --green: #56BD8E;
+  --green-light: #e8f8f1;
+  --amber: #F59E0B;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+  --body-text: #374151;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--white);
+  color: var(--ink);
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 3rem 3rem 4rem;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.1rem;
+  border-bottom: 3px solid var(--green);
+  margin-bottom: 3rem;
+}
+.top-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.top-links {
+  display: flex;
+  gap: 1.35rem;
+  align-items: center;
+}
+.top-links a {
+  font-size: 0.76rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.top-links a:hover { color: var(--green); }
+.top-links .divider {
+  font-size: 0.65rem;
+  color: var(--border);
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 3.25rem;
+}
+.hero-content {}
+.hero-name {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(4rem, 8vw, 6.5rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.6rem;
+  color: var(--ink);
+}
+.hero-sub {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #374151;
+  border-left: 3px solid var(--amber);
+  padding-left: 1.2rem;
+  max-width: 560px;
+}
+.hero-photo-wrap {
+  position: relative;
+}
+.hero-photo {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: 40% 15%;
+  border-radius: 6px;
+  display: block;
+}
+.hero-photo-caption {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* SECTIONS */
+.section {
+  padding: 2.35rem 0;
+  border-top: 1px solid var(--border);
+}
+.eyebrow {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--ink);
+  padding: 0.24rem 0.65rem;
+  border-radius: 2px;
+  margin-bottom: 0.95rem;
+}
+.section-headline {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.95rem;
+  color: var(--ink);
+}
+.section-body {
+  font-size: 0.98rem;
+  line-height: 1.82;
+  color: var(--body-text);
+  max-width: 740px;
+}
+.section-body + .section-body { margin-top: 0.8rem; }
+
+/* STAT CHIPS */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+.stat {
+  background: var(--amber);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 2px;
+  letter-spacing: 0.01em;
+}
+
+/* ROLES TABLE */
+.roles {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.role {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+.role:last-child { border-bottom: none; }
+.role-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  padding: 3px;
+  background: var(--white);
+}
+.role-info { flex: 1; }
+.role-title { font-weight: 600; color: var(--ink); }
+.role-org { color: var(--muted); font-size: 0.84rem; margin-top: 0.1rem; }
+.role-years {
+  color: var(--muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* HUMAN SECTION */
+.human {
+  background: var(--off);
+  margin: 0 -3rem;
+  padding: 2rem 3rem 2.25rem;
+}
+.human-headline {
+  font-family: 'Fraunces', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.human-body {
+  font-family: 'Fraunces', serif;
+  font-size: 1.02rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--body-text);
+  line-height: 1.7;
+  max-width: 700px;
+}
+.reputation {
+  margin-top: 1.2rem;
+  font-size: 0.84rem;
+  color: var(--muted);
+  border-left: 2px solid var(--border);
+  padding-left: 0.9rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+.rep-attribution {
+  display: block;
+  margin-top: 0.3rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #9CA3AF;
+}
+
+/* CTA */
+.cta {
+  padding: 3rem 0 0.5rem;
+  text-align: center;
+}
+.cta-headline {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--ink);
+  margin-bottom: 1.4rem;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.cta-email {
+  display: inline-block;
+  background: var(--green);
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.7rem 1.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.cta-email:hover { opacity: 0.85; }
+.cta-linkedin {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: border-color 0.15s;
+}
+.cta-linkedin:hover { border-color: var(--green); }
+
+@media (max-width: 680px) {
+  body { padding: 1.75rem 1.35rem 2.5rem; }
+  .hero { grid-template-columns: 1fr; gap: 1.75rem; }
+  .hero-name { font-size: 4rem; }
+  .hero-photo { height: 240px; object-position: 40% 10%; }
+  .human { margin: 0 -1.35rem; padding: 1.5rem 1.35rem 1.75rem; }
+  .top-links .divider { display: none; }
+}
+
+@media print {
+  body { padding: 1.5rem 2rem 2rem; max-width: 100%; }
+  .human { margin: 0; }
+  .top-links a { color: var(--muted); }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span class="top-label">timhaslam.com</span>
+  <div class="top-links">
+    <a href="mailto:tim@timhaslam.com">tim@timhaslam.com</a>
+    <span class="divider">·</span>
+    <a href="https://www.linkedin.com/in/timhaslam23/" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="divider">·</span>
+    <span style="font-size:0.76rem; color:var(--muted);">Salt Lake City, UT</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1 class="hero-name">Tim<br>Haslam</h1>
+    <p class="hero-sub">I've spent most of my career solving problems that don't fit neatly into a job title. My résumé says "Director of Web Development." Here's what that actually looks like.</p>
+  </div>
+  <div class="hero-photo-wrap">
+    <img class="hero-photo" src="./avatar.JPG" alt="Tim Haslam on the lacrosse field" />
+    <p class="hero-photo-caption">On the sideline</p>
+  </div>
+</div>
+
+<!-- BUILDER -->
+<div class="section">
+  <span class="eyebrow">Builder</span>
+  <h2 class="section-headline">When there's no tool for the job, I build one.</h2>
+  <p class="section-body">I noticed my QA team running the same manual scripts over and over — checking GTM implementation, scanning for outdated product language, flagging WCAG accessibility issues — across a whole portfolio of sites. So I built a Playwright-based GUI in Replit that lets anyone on the team run those tests on any site, any time, with no technical setup required. Results populate a live dashboard ranking best and worst performers. Issues push directly to Asana. No one asked for it. No budget was allocated.</p>
+  <p class="section-body">I've also built AI-powered applications using the Anthropic API — tools that get used daily, not demoed once and forgotten. My toolset spans WordPress and Google Tag Manager to Playwright, Replit, and large language model APIs. The through-line isn't the stack. It's the instinct to spot a gap and close it before anyone else notices it's there.</p>
+</div>
+
+<!-- MEDIA FOUNDER -->
+<div class="section">
+  <span class="eyebrow">Media Founder</span>
+  <h2 class="section-headline">I built an audience from scratch. Twice.</h2>
+  <p class="section-body">In 2010, I founded Utah Lacrosse News because nobody was covering the sport in the state. I ran it for seven years. In 2019, I did it again — this time as Utah Lax Report. I started with zero followers, zero subscribers, and zero budget. Today I run it as a real media operation: writing, strategy, social presence, Substack, and community relationships. All of it. Because that's what it takes to build something people actually show up for.</p>
+  <div class="stats">
+    <span class="stat">0 → 3,200 Substack Subscribers</span>
+    <span class="stat">0 → 9,000 Instagram Followers</span>
+    <span class="stat">Built from scratch · Twice</span>
+  </div>
+</div>
+
+<!-- OPERATOR -->
+<div class="section">
+  <span class="eyebrow">Operator</span>
+  <h2 class="section-headline">Director-level. Earned, not assigned.</h2>
+  <p class="section-body">At Integrity, I run a 150+ website ecosystem — scaling toward 400+ — that reaches millions of users every month. A lot of the work is less about writing code and more about turning messy, undefined problems into structured execution. Someone has a "quick website issue" and it becomes a coordinated effort across development, QA, compliance, design, and content teams. My job is to make sure it gets done, done right, and doesn't get stuck along the way.</p>
+  <p class="section-body">I stay hands-on technically — reviewing code, fixing issues, building automation that cuts repetitive maintenance at scale — while managing and mentoring a distributed team and leading WCAG compliance initiatives across the full portfolio. As Director of Operations for University of Utah Men's Lacrosse, I managed a six-figure seasonal budget and coordinated travel for 50+ athletes and staff to away games across the country. Different context, same skillset: organize chaos, create systems, make things happen.</p>
+  <div class="roles">
+    <div class="role">
+      <img class="role-logo" src="icons/icon-ulr.jpeg" alt="Utah Lax Report" />
+      <div class="role-info">
+        <div class="role-title">Founder &amp; Editor in Chief</div>
+        <div class="role-org">Utah Lax Report</div>
+      </div>
+      <span class="role-years">2019 – Present</span>
+    </div>
+    <div class="role">
+      <img class="role-logo" src="icons/icon-integrity.jpeg" alt="Integrity" />
+      <div class="role-info">
+        <div class="role-title">Director of Web Development</div>
+        <div class="role-org">Integrity Marketing Group</div>
+      </div>
+      <span class="role-years">2021 – Present</span>
+    </div>
+    <div class="role">
+      <img class="role-logo" src="icons/icon-utah.jpeg" alt="University of Utah" />
+      <div class="role-info">
+        <div class="role-title">Director of Operations, Men's Lacrosse</div>
+        <div class="role-org">University of Utah</div>
+      </div>
+      <span class="role-years">2022 – 2025</span>
+    </div>
+    <div class="role">
+      <img class="role-logo" src="icons/icon-goed.jpeg" alt="Governor's Office" />
+      <div class="role-info">
+        <div class="role-title">Digital Media Specialist</div>
+        <div class="role-org">Utah Governor's Office of Economic Development</div>
+      </div>
+      <span class="role-years">2020 – 2021</span>
+    </div>
+    <div class="role">
+      <img class="role-logo" src="icons/icon-cg.jpeg" alt="Code Greene" />
+      <div class="role-info">
+        <div class="role-title">Web Developer</div>
+        <div class="role-org">Code Greene</div>
+      </div>
+      <span class="role-years">2008 – 2020</span>
+    </div>
+  </div>
+</div>
+
+<!-- HUMAN -->
+<div class="human">
+  <h3 class="human-headline">The rest of it.</h3>
+  <p class="human-body">Dad of four. Currently on a mission to visit all 30 MLB stadiums — because some goals need to be unreasonable. Lacrosse has been part of my life for as long as I can remember — the media work started because nobody was covering it, and I've never quite been able to stop. Everything else I build starts the same way: I notice something that could work better and I can't really leave it alone.</p>
+  <p class="reputation">
+    "Gets his stuff done. Kind. Willing to help."
+    <span class="rep-attribution">— How colleagues describe him</span>
+  </p>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <p class="cta-headline">I'm someone teams rely on when something is unclear, stuck, or starting to break. If that's what you're looking for — let's talk.</p>
+  <div class="cta-links">
+    <a class="cta-email" href="mailto:tim@timhaslam.com">tim@timhaslam.com</a>
+    <a class="cta-linkedin" href="https://www.linkedin.com/in/timhaslam23/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+  </div>
+</div>
+
+</body>
 </html>
